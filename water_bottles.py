@@ -1,7 +1,7 @@
 class Solution:
     def numWaterBottles(self, numBottles: int, numExchange: int) -> int:
         total_bottles = numBottles
-        while (numBottles >= numExchange):
+        while numBottles >= numExchange:
             remain = numBottles % numExchange
             numBottles = numBottles // numExchange
             total_bottles = total_bottles + numBottles
